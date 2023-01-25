@@ -1,0 +1,21 @@
+{
+  "name": "long-polling-chat",
+  "version": "1.0.0",
+  "description": "Repo for the long polling chat programming tutorial on my youtube channel.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Boi-zip/long-polling-chat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Boi-zip/long-polling-chat/issues"
+  },
+  "homepage": "https://github.com/Boi-zip/long-polling-chat#readme"
+}
