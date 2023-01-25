@@ -20,7 +20,7 @@ function handlePoll(req, res) {
 }
 
 function handlePage(req, res) {
-  fs.createReadStream(__dirname + "/client.html").pipe(res);
+  fs.createReadStream(__dirname + "client.html").pipe(res);
 }
 
 function emitMessage(message) {
