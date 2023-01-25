@@ -21,8 +21,8 @@ function handlePoll(req, res) {
 
 function handlePage(req, res) {
   fs.readFile("client.html", function(error, data){
-    response.statusCode = 200;
-    response.end(data);
+    res.statusCode = 200;
+    res.end(data);
   })
 }
 
