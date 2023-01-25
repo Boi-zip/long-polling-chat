@@ -44,7 +44,7 @@ http
     let method = req.method;
     let url = req.url;
     if (method === "GET") {
-      if (url === "/page") handlePage(req, res);
+      if (url === "/") handlePage(req, res);
       else if (url === "/poll") handlePoll(req, res);
     } else if (method === "POST" && url === "/message") handleMessage(req, res);
     else req.end();
