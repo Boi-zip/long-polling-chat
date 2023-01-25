@@ -20,7 +20,7 @@ function handlePoll(req, res) {
 }
 
 function handlePage(req, res) {
-  fs.createReadStream(__dirname + "client.html").pipe(res);
+  fs.createReadStream(__dirname + "/client.html").pipe(res);
 }
 
 function emitMessage(message) {
@@ -49,7 +49,7 @@ http
     } else if (method === "POST" && url === "/message") handleMessage(req, res);
     else req.end();
   })
-  .listen(5000)
+  .listen(3000)
   .on("listening", () => {
-    console.log("I am listening on port 5000!");
+    console.log("I am listening on port 3000!");
   });
