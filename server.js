@@ -20,7 +20,10 @@ function handlePoll(req, res) {
 }
 
 function handlePage(req, res) {
-  fs.createReadStream(__dirname + "/client.html").pipe(res);
+  fs.readFile("client.html", function(error, data){
+    response.statusCode = 200;
+    response.end(data);
+  })
 }
 
 function emitMessage(message) {
